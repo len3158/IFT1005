@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Mordus de la neige</title>
+    </head>
+<body>
+    <header class="banner">
+        <div class="wrapper-banner">
+            <img class="banner" src="images/mountains-full.jpg">
+            <p>Mordus de la neige</p>
+        </div>
+    </header>
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="boutique.html">La boutique</a>
+        <a href="tarif.html">Tarifs</a>
+        <a href="design.html">Design</a>
+        <a href="contact.html" class="active">Nous contacter</a>
+        <a href="a_propos.html">À propos</a>
+    </nav>
+<main>
+    <section>
+        <address>
+            <ul>
+                <li>Nous contacter par téléphone: <strong>514-123-4567</strong></li>
+                <li>Nous contacter par mail: <a href="mailto:lenny-joseph@umontreal.ca">Écrire un mail</a>
+                </li>
+            </ul>
+            </address>
+    </section>
+    <p>Si vous souhaitez nous faire part de vos suggestions, connaître l'état de notre inventaire ou souhaitez passer une commande speciale, merci de remplir le formulaire ci-desous:
+    </p>
+    <form method="post" action="http://www-etud.iro.umontreal.ca/~morinleo/form_print.php">
+        <fieldset>
+            <fieldset>
+            <legend> Données personelles</legend>
+               <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="Nom" id="nom" required/>
+               </div>
+                <div>
+                    <label for="prénom">Prénom</label>
+                    <input type="text" name="Prénom" id="prénom" required/>
+                </div>
+                <div>
+                    <label for="age">
+                        <abbr title="Nous vous demandons votre âge seulement pour des fins statistiques.">Âge</abbr>
+                    </label>
+                    <input type="number" name="Âge" id="age"/>
+                </div>
+               <div>
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" name="Phone" id="phone" placeholder="(999) 999-9999" pattern="\([1-9][1-9]{2}\) [1-9]{3}-[1-9]{4}"/>
+               </div>
+               <div>   
+                    <label for="mail">Votre courriel</label>
+                    <input type="email" name="Courriel" id="courriel" placeholder="nom@exemple.com" required/>
+               </div>
+               <div>
+                    <label for="mail">Confirmation du courriel</label>
+                    <input type="email" name="Courriel" id="confcourriel" required/>
+               </div>
+              <div>
+                    <label for="code postal">Code postal</label>
+                    <input type="text" name="CP" id="cp" placeholder="X9X9X9" pattern="[A-Z][0-9][A-Z][0-9][A-Z][0-9]"/>
+              </div>  
+              <div>  
+                    <label for="ville">Ville</label>
+                  <input type="text" name="Ville" id="ville"/>
+              </div>
+              <div> 
+                    <label for="province">Province</label> 
+                    <select name="Province" id="province"> 
+                        <option> ---Veuillez sélectionner une province--- </option>
+                        <option> Alberta </option>
+                        <option> Colombie-Britanique </option>
+                        <option> Île-du-Prince-Édouard </option>
+                        <option> Manitoba </option> 
+                        <option> Nouveau-Brunswick </option>
+                        <option> Nouvelle-Écosse </option> 
+                        <option> Ontario </option>
+                        <option> Québec </option> 
+                        <option> Saskatchewan </option> 
+                        <option> Terre-Neuve-et-Labrador </option> 
+                    </select> 
+                </div> 
+            </fieldset>    
+            <fieldset>   
+                <legend> Autres Informations </legend>
+                    <p> Souhaitez-vous recevoir notre newsletter hebdomadaire par courriel? </p>
+                    <input type="radio" name="Newsletter" value="Oui" checked/>
+                    <label for="Y"> Oui </label>
+                    <input type="radio" name="Newsletter" value="Non" id="N"/>
+                    <label for="N"> Non </label>
+                    <div> Par quel moyen visitez-vous notre site?</div>
+                    <input type="checkbox" name="infos[ ]" value="ordinateur" checked/>
+                    <label for="ordinateur"> Ordinateur de Bureau </label>
+                    <input type="checkbox" name="infos[ ]" value="tablette" id="tele" />
+                    <label for="tablette"> Tablette </label>
+                    <input type="checkbox" name="infos[ ]" value="smartphone" id="revue" />
+                    <label for="smartphone"> Smartphone </label>
+                    <input type="hidden" name="cache" id="cache" value="SIEL27049508"/> 
+            </fieldset> 
+                <div>
+                    <p>Ecrivez-nous ici!</p>
+                    <label for="commentaire"></label>
+                    <textarea name="Commentaire" id="msg" rows="8" cols="50" placeholder="Entrez votre texte ici" ></textarea>
+                </div>
+            <p id="submit">
+                <input class="envoyer" type="submit" value="Envoyer"/>
+                <input class="annuler" type="reset" value="Annuler"/>
+            </p>
+        </fieldset>    
+    </form> 
+</main>
+<footer>
+    <em>©2017 COPYRIGHT La boutique mordus d'la neige. Tous droits réservés.</em><br>
+    <em>Les photographies utilisées ont toutes une license CC-Zero.</em>
+    <br><a href="mailto:gabriel@lemyre.com">gabriel@lemyre.com</a><br>
+    <a href="mailto:lenny-joseph@siemeni_tchokote.com">lenny-joseph@siemeni_tchokote.com</a>
+</footer>
+</body>
+</html>
